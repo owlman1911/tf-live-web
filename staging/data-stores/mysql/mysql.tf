@@ -24,5 +24,7 @@ resource "aws_db_instance" "web-mysql-tf" {
     username                    = "admin"
 
     password                    = "p1ssw0rd"
+    skip_final_snapshot         = true
+    final_snapshot_identifier   = "hostme_dbinst_finalbkup"
   
 }
